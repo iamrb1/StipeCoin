@@ -1,7 +1,7 @@
 const hre = require("hardhat");
 
 async function main() {
-  const StipeCoin = await hre.ethers.getContractFactory("OceanToken");
+  const StipeCoin = await hre.ethers.getContractFactory("StipeCoin");
   const stipeCoin = await StipeCoin.deploy(70000000, 7)
 
   await stipeCoin.deployed();
